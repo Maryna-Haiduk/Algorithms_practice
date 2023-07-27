@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Algorithms_Practice;
+using System;
 
 namespace Algorithms
 {
@@ -7,7 +8,13 @@ namespace Algorithms
         public static void Main(string[] args)
         {
             var numbers = new[] { 1, 5, 0, 34, 3, 9, 192 };
-            Console.WriteLine();
+            QuickSort_Implementation.QuickSort(numbers);
+
+           foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+               
         }
 
 
